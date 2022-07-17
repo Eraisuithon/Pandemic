@@ -38,9 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3942924899
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Cities
     uniqueID: 2582127407
+    locked: 0
+  - name: Pieces
+    uniqueID: 18574661
     locked: 0
