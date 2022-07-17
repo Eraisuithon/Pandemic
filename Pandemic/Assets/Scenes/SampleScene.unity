@@ -531,6 +531,7 @@ GameObject:
   - component: {fileID: 1141882517}
   - component: {fileID: 1141882516}
   - component: {fileID: 1141882519}
+  - component: {fileID: 1141882520}
   m_Layer: 5
   m_Name: Atlanda
   m_TagString: Untagged
@@ -554,8 +555,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 207, y: 139}
-  m_SizeDelta: {x: -560, y: -354}
+  m_AnchoredPosition: {x: -259.65454, y: 51.695404}
+  m_SizeDelta: {x: -834.7781, y: -435.8199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1141882516
 SpriteRenderer:
@@ -598,7 +599,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -658,6 +659,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &1141882520
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141882514}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1161974815
 GameObject:
   m_ObjectHideFlags: 0
