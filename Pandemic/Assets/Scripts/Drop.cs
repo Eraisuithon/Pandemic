@@ -10,8 +10,14 @@ public class Drop : MonoBehaviour, IDropHandler
         Debug.Log("OnDrop");
         if (eventData.pointerDrag != null)
         {
-            eventData.pointerDrag.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
-            eventData.pointerDrag.GetComponent<PrevPosition>().position = GetComponent<RectTransform>().position;
+            string prevCity = eventData.pointerDrag.GetComponent<Variables>().prevCity;
+            string newCity = gameObject.name;
+            if (eventData.pointerDrag.GetComponent<Variables>().neighbors[prevCity].Contains(newCity))
+            {
+                eventData.pointerDrag.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
+                eventData.pointerDrag.GetComponent<Variables>().position = GetComponent<RectTransform>().position;
+                eventData.pointerDrag.GetComponent<Variables>().prevCity = newCity;
+            }
         }
     }
 }
