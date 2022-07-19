@@ -11,7 +11,7 @@ public class Drop : MonoBehaviour, IDropHandler
         if (eventData.pointerDrag != null)
         {
             eventData.pointerDrag.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
-            eventData.pointerDrag.GetComponent<PrevPosition>().position = GetComponent<RectTransform>().position;
+            eventData.pointerDrag.GetComponent<Piece>().position = GetComponent<RectTransform>().position;
         }
     }
 }
