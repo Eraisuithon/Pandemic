@@ -133,6 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 217207477}
   - component: {fileID: 217207478}
+  - component: {fileID: 217207480}
+  - component: {fileID: 217207479}
   m_Layer: 0
   m_Name: Red_Sydney
   m_TagString: Untagged
@@ -205,6 +207,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &217207479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217207476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &217207480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217207476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &232900093
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +245,8 @@ GameObject:
   m_Component:
   - component: {fileID: 232900094}
   - component: {fileID: 232900095}
+  - component: {fileID: 232900097}
+  - component: {fileID: 232900096}
   m_Layer: 0
   m_Name: Blue_NewYork
   m_TagString: Untagged
@@ -287,6 +319,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &232900096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232900093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &232900097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232900093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &238989883
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +357,8 @@ GameObject:
   m_Component:
   - component: {fileID: 238989884}
   - component: {fileID: 238989885}
+  - component: {fileID: 238989887}
+  - component: {fileID: 238989886}
   m_Layer: 0
   m_Name: Blue_London
   m_TagString: Untagged
@@ -369,6 +431,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &238989886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238989883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &238989887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238989883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &240499776
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +469,8 @@ GameObject:
   m_Component:
   - component: {fileID: 240499777}
   - component: {fileID: 240499778}
+  - component: {fileID: 240499780}
+  - component: {fileID: 240499779}
   m_Layer: 0
   m_Name: Red_Beijing
   m_TagString: Untagged
@@ -451,6 +543,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &240499779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240499776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &240499780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240499776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &273768607
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +613,8 @@ GameObject:
   m_Component:
   - component: {fileID: 280943710}
   - component: {fileID: 280943711}
+  - component: {fileID: 280943713}
+  - component: {fileID: 280943712}
   m_Layer: 0
   m_Name: Yellow_Lima
   m_TagString: Untagged
@@ -565,6 +687,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &280943712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280943709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &280943713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280943709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &315569939
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +808,8 @@ GameObject:
   m_Component:
   - component: {fileID: 346264608}
   - component: {fileID: 346264609}
+  - component: {fileID: 346264611}
+  - component: {fileID: 346264610}
   m_Layer: 0
   m_Name: Yellow_MexicoCity
   m_TagString: Untagged
@@ -730,6 +882,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &346264610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346264607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &346264611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346264607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &368065458
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +920,8 @@ GameObject:
   m_Component:
   - component: {fileID: 368065459}
   - component: {fileID: 368065460}
+  - component: {fileID: 368065462}
+  - component: {fileID: 368065461}
   m_Layer: 0
   m_Name: Blue_Madrid
   m_TagString: Untagged
@@ -812,6 +994,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &368065461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368065458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &368065462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368065458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &472392831
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +1032,8 @@ GameObject:
   m_Component:
   - component: {fileID: 472392832}
   - component: {fileID: 472392833}
+  - component: {fileID: 472392835}
+  - component: {fileID: 472392834}
   m_Layer: 0
   m_Name: Yellow_Santiago
   m_TagString: Untagged
@@ -894,6 +1106,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &472392834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472392831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &472392835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472392831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &569815643
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +1144,8 @@ GameObject:
   m_Component:
   - component: {fileID: 569815644}
   - component: {fileID: 569815645}
+  - component: {fileID: 569815647}
+  - component: {fileID: 569815646}
   m_Layer: 0
   m_Name: Yellow_LosAngeles
   m_TagString: Untagged
@@ -976,6 +1218,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &569815646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569815643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &569815647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569815643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &575305926
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,6 +1256,8 @@ GameObject:
   m_Component:
   - component: {fileID: 575305927}
   - component: {fileID: 575305928}
+  - component: {fileID: 575305930}
+  - component: {fileID: 575305929}
   m_Layer: 0
   m_Name: Black_Kolkata
   m_TagString: Untagged
@@ -1058,6 +1330,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &575305929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575305926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &575305930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575305926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &581730830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,8 +1412,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -352042397
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f8449972e5d8a6a4cadf2b3146d52d1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1150,6 +1450,8 @@ GameObject:
   m_Component:
   - component: {fileID: 590109726}
   - component: {fileID: 590109727}
+  - component: {fileID: 590109729}
+  - component: {fileID: 590109728}
   m_Layer: 0
   m_Name: Yellow_SaoPaulo
   m_TagString: Untagged
@@ -1222,6 +1524,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &590109728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590109725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &590109729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590109725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &597426336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1562,8 @@ GameObject:
   m_Component:
   - component: {fileID: 597426337}
   - component: {fileID: 597426338}
+  - component: {fileID: 597426340}
+  - component: {fileID: 597426339}
   m_Layer: 0
   m_Name: Black_Karachi
   m_TagString: Untagged
@@ -1304,6 +1636,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &597426339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597426336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &597426340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597426336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &603803216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1674,8 @@ GameObject:
   m_Component:
   - component: {fileID: 603803217}
   - component: {fileID: 603803218}
+  - component: {fileID: 603803220}
+  - component: {fileID: 603803219}
   m_Layer: 0
   m_Name: Blue_Paris
   m_TagString: Untagged
@@ -1386,6 +1748,149 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &603803219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603803216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &603803220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603803216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &654313029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 654313030}
+  - component: {fileID: 654313031}
+  - component: {fileID: 654313033}
+  - component: {fileID: 654313032}
+  m_Layer: 5
+  m_Name: Green
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &654313030
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654313029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1386944960}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -405.55, y: -215.19}
+  m_SizeDelta: {x: 0.6092, y: 0.6891}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &654313031
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654313029}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 18574661
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 210bf4340dae57949a59fc730db724d2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &654313032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654313029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77954cfe21f392e4eb35da5ad0c632f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 0, z: 0}
+--- !u!114 &654313033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654313029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b088405da59b949afd561b8d433e28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1386944959}
 --- !u!1 &689083662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1901,8 @@ GameObject:
   m_Component:
   - component: {fileID: 689083663}
   - component: {fileID: 689083664}
+  - component: {fileID: 689083666}
+  - component: {fileID: 689083665}
   m_Layer: 0
   m_Name: Red_Tokyo
   m_TagString: Untagged
@@ -1468,6 +1975,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &689083665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689083662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &689083666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689083662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &735135813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +2013,8 @@ GameObject:
   m_Component:
   - component: {fileID: 735135814}
   - component: {fileID: 735135815}
+  - component: {fileID: 735135817}
+  - component: {fileID: 735135816}
   m_Layer: 0
   m_Name: Blue_Atlanta
   m_TagString: Untagged
@@ -1550,6 +2087,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &735135816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735135813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &735135817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735135813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910109304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,6 +2125,8 @@ GameObject:
   m_Component:
   - component: {fileID: 910109305}
   - component: {fileID: 910109306}
+  - component: {fileID: 910109308}
+  - component: {fileID: 910109307}
   m_Layer: 0
   m_Name: Black_Algiers
   m_TagString: Untagged
@@ -1632,6 +2199,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &910109307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910109304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &910109308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910109304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &931242458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +2237,8 @@ GameObject:
   m_Component:
   - component: {fileID: 931242459}
   - component: {fileID: 931242460}
+  - component: {fileID: 931242462}
+  - component: {fileID: 931242461}
   m_Layer: 0
   m_Name: Red_Jakarta
   m_TagString: Untagged
@@ -1714,6 +2311,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &931242461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931242458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &931242462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931242458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &937065227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,6 +2349,8 @@ GameObject:
   m_Component:
   - component: {fileID: 937065228}
   - component: {fileID: 937065229}
+  - component: {fileID: 937065231}
+  - component: {fileID: 937065230}
   m_Layer: 0
   m_Name: Black_Mumbai
   m_TagString: Untagged
@@ -1796,6 +2423,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &937065230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937065227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &937065231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937065227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &953044639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,6 +2461,8 @@ GameObject:
   m_Component:
   - component: {fileID: 953044640}
   - component: {fileID: 953044641}
+  - component: {fileID: 953044643}
+  - component: {fileID: 953044642}
   m_Layer: 0
   m_Name: Red_HongKong
   m_TagString: Untagged
@@ -1878,6 +2535,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &953044642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953044639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &953044643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953044639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &973200550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +2573,8 @@ GameObject:
   m_Component:
   - component: {fileID: 973200551}
   - component: {fileID: 973200552}
+  - component: {fileID: 973200554}
+  - component: {fileID: 973200553}
   m_Layer: 0
   m_Name: Yellow_Bogota
   m_TagString: Untagged
@@ -1960,6 +2647,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &973200553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973200550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &973200554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973200550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &980795217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,6 +2685,8 @@ GameObject:
   m_Component:
   - component: {fileID: 980795218}
   - component: {fileID: 980795219}
+  - component: {fileID: 980795221}
+  - component: {fileID: 980795220}
   m_Layer: 0
   m_Name: Yellow_Johannesburg
   m_TagString: Untagged
@@ -2042,6 +2759,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &980795220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980795217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &980795221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980795217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &993834068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,6 +2797,8 @@ GameObject:
   m_Component:
   - component: {fileID: 993834069}
   - component: {fileID: 993834070}
+  - component: {fileID: 993834072}
+  - component: {fileID: 993834071}
   m_Layer: 0
   m_Name: Blue_SanFrancisco
   m_TagString: Untagged
@@ -2124,6 +2871,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &993834071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993834068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &993834072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993834068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &997474229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2909,8 @@ GameObject:
   m_Component:
   - component: {fileID: 997474230}
   - component: {fileID: 997474231}
+  - component: {fileID: 997474233}
+  - component: {fileID: 997474232}
   m_Layer: 0
   m_Name: Red_Manila
   m_TagString: Untagged
@@ -2206,6 +2983,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &997474232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997474229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &997474233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997474229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1012155276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,6 +3021,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1012155277}
   - component: {fileID: 1012155278}
+  - component: {fileID: 1012155280}
+  - component: {fileID: 1012155279}
   m_Layer: 0
   m_Name: Blue_StPetersburg
   m_TagString: Untagged
@@ -2288,6 +3095,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1012155279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012155276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1012155280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012155276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1103207638
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,6 +3133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1103207639}
   - component: {fileID: 1103207640}
+  - component: {fileID: 1103207642}
+  - component: {fileID: 1103207641}
   m_Layer: 0
   m_Name: Black_Delhi
   m_TagString: Untagged
@@ -2370,6 +3207,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1103207641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103207638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1103207642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103207638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1220775572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2380,6 +3245,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1220775573}
   - component: {fileID: 1220775574}
+  - component: {fileID: 1220775576}
+  - component: {fileID: 1220775575}
   m_Layer: 0
   m_Name: Red_HoChiMinhCity
   m_TagString: Untagged
@@ -2452,6 +3319,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1220775575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220775572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1220775576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220775572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1257733852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,6 +3435,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1351754596}
   - component: {fileID: 1351754597}
+  - component: {fileID: 1351754599}
+  - component: {fileID: 1351754598}
   m_Layer: 0
   m_Name: Blue_Washington
   m_TagString: Untagged
@@ -2612,6 +3509,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1351754598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351754595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1351754599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351754595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1359013808
 GameObject:
   m_ObjectHideFlags: 0
@@ -2622,6 +3547,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1359013809}
   - component: {fileID: 1359013810}
+  - component: {fileID: 1359013812}
+  - component: {fileID: 1359013811}
   m_Layer: 0
   m_Name: Yellow_Lagos
   m_TagString: Untagged
@@ -2694,6 +3621,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1359013811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359013808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1359013812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359013808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1363118870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +3659,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1363118871}
   - component: {fileID: 1363118872}
+  - component: {fileID: 1363118874}
+  - component: {fileID: 1363118873}
   m_Layer: 0
   m_Name: Red_Taipei
   m_TagString: Untagged
@@ -2776,6 +3733,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1363118873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363118870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1363118874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363118870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1386944956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1386944960}
+  - component: {fileID: 1386944959}
+  - component: {fileID: 1386944958}
+  - component: {fileID: 1386944957}
+  m_Layer: 5
+  m_Name: Pieces
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1386944957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386944956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1386944958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386944956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1386944959
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386944956}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1386944960
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386944956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 654313030}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1450378589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,6 +3871,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1450378590}
   - component: {fileID: 1450378591}
+  - component: {fileID: 1450378593}
+  - component: {fileID: 1450378592}
   m_Layer: 0
   m_Name: Red_Shanghai
   m_TagString: Untagged
@@ -2858,6 +3945,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1450378592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450378589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1450378593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450378589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1462211037
 GameObject:
   m_ObjectHideFlags: 0
@@ -2868,6 +3983,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1462211038}
   - component: {fileID: 1462211039}
+  - component: {fileID: 1462211041}
+  - component: {fileID: 1462211040}
   m_Layer: 0
   m_Name: Blue_Montreal
   m_TagString: Untagged
@@ -2940,6 +4057,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1462211040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462211037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1462211041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462211037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1462435748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,6 +4095,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1462435749}
   - component: {fileID: 1462435750}
+  - component: {fileID: 1462435752}
+  - component: {fileID: 1462435751}
   m_Layer: 0
   m_Name: Black_Instanbul
   m_TagString: Untagged
@@ -3022,6 +4169,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1462435751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462435748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1462435752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462435748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1517648626
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,9 +4251,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -352042397
+  m_SortingLayer: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4ab78d458a2b9ee4b91f3f8ab8457668, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3114,6 +4289,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1550032583}
   - component: {fileID: 1550032584}
+  - component: {fileID: 1550032586}
+  - component: {fileID: 1550032585}
   m_Layer: 0
   m_Name: Red_Seoul
   m_TagString: Untagged
@@ -3186,6 +4363,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1550032585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550032582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1550032586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550032582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1604615096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,6 +4401,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1604615097}
   - component: {fileID: 1604615098}
+  - component: {fileID: 1604615100}
+  - component: {fileID: 1604615099}
   m_Layer: 0
   m_Name: Black_Cairo
   m_TagString: Untagged
@@ -3268,6 +4475,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1604615099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604615096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1604615100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604615096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1637224147
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,6 +4513,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1637224148}
   - component: {fileID: 1637224149}
+  - component: {fileID: 1637224151}
+  - component: {fileID: 1637224150}
   m_Layer: 0
   m_Name: Blue_Chicago
   m_TagString: Untagged
@@ -3350,6 +4587,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1637224150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637224147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1637224151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637224147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1672382336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3360,6 +4625,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1672382337}
   - component: {fileID: 1672382338}
+  - component: {fileID: 1672382340}
+  - component: {fileID: 1672382339}
   m_Layer: 0
   m_Name: Black_Baghdad
   m_TagString: Untagged
@@ -3432,6 +4699,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1672382339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672382336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1672382340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672382336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1754922119
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,6 +4737,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1754922120}
   - component: {fileID: 1754922121}
+  - component: {fileID: 1754922123}
+  - component: {fileID: 1754922122}
   m_Layer: 0
   m_Name: Yellow_Khartoum
   m_TagString: Untagged
@@ -3514,6 +4811,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1754922122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754922119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1754922123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754922119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1771486105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3524,6 +4849,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1771486106}
   - component: {fileID: 1771486107}
+  - component: {fileID: 1771486109}
+  - component: {fileID: 1771486108}
   m_Layer: 0
   m_Name: Yellow_Kinshasa
   m_TagString: Untagged
@@ -3596,6 +4923,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1771486108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771486105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1771486109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771486105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1771557602
 GameObject:
   m_ObjectHideFlags: 0
@@ -3606,6 +4961,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1771557603}
   - component: {fileID: 1771557604}
+  - component: {fileID: 1771557606}
+  - component: {fileID: 1771557605}
   m_Layer: 0
   m_Name: Black_Moscow
   m_TagString: Untagged
@@ -3678,6 +5035,100 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1771557605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771557602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1771557606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771557602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1854223135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854223138}
+  - component: {fileID: 1854223137}
+  - component: {fileID: 1854223136}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1854223136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854223135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1854223137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854223135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1854223138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854223135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869232828
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,6 +5139,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1869232829}
   - component: {fileID: 1869232830}
+  - component: {fileID: 1869232832}
+  - component: {fileID: 1869232831}
   m_Layer: 0
   m_Name: Blue_Essen
   m_TagString: Untagged
@@ -3760,6 +5213,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1869232831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869232828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1869232832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869232828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1910720932
 GameObject:
   m_ObjectHideFlags: 0
@@ -3770,6 +5251,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1910720933}
   - component: {fileID: 1910720934}
+  - component: {fileID: 1910720936}
+  - component: {fileID: 1910720935}
   m_Layer: 0
   m_Name: Yellow_BuenosAires
   m_TagString: Untagged
@@ -3842,6 +5325,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1910720935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910720932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1910720936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910720932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1954866722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3852,6 +5363,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1954866723}
   - component: {fileID: 1954866724}
+  - component: {fileID: 1954866726}
+  - component: {fileID: 1954866725}
   m_Layer: 0
   m_Name: Black_Riyadh
   m_TagString: Untagged
@@ -3924,6 +5437,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1954866725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954866722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1954866726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954866722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1988332663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3934,6 +5475,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1988332664}
   - component: {fileID: 1988332665}
+  - component: {fileID: 1988332667}
+  - component: {fileID: 1988332666}
   m_Layer: 0
   m_Name: Black_Tehran
   m_TagString: Untagged
@@ -4006,6 +5549,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1988332666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988332663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &1988332667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988332663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2077733223
 GameObject:
   m_ObjectHideFlags: 0
@@ -4016,6 +5587,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2077733224}
   - component: {fileID: 2077733225}
+  - component: {fileID: 2077733227}
+  - component: {fileID: 2077733226}
   m_Layer: 0
   m_Name: Blue_Milan
   m_TagString: Untagged
@@ -4088,6 +5661,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2077733226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077733223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &2077733227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077733223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2102973702
 GameObject:
   m_ObjectHideFlags: 0
@@ -4098,6 +5699,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2102973703}
   - component: {fileID: 2102973704}
+  - component: {fileID: 2102973706}
+  - component: {fileID: 2102973705}
   m_Layer: 0
   m_Name: Red_Bangkok
   m_TagString: Untagged
@@ -4170,6 +5773,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2102973705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102973702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &2102973706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102973702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2132088450
 GameObject:
   m_ObjectHideFlags: 0
@@ -4180,6 +5811,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2132088451}
   - component: {fileID: 2132088452}
+  - component: {fileID: 2132088454}
+  - component: {fileID: 2132088453}
   m_Layer: 0
   m_Name: Black_Chennai
   m_TagString: Untagged
@@ -4252,6 +5885,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2132088453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132088450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &2132088454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132088450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2138577771
 GameObject:
   m_ObjectHideFlags: 0
@@ -4262,6 +5923,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2138577772}
   - component: {fileID: 2138577773}
+  - component: {fileID: 2138577775}
+  - component: {fileID: 2138577774}
   m_Layer: 0
   m_Name: Red_Osaka
   m_TagString: Untagged
@@ -4334,6 +5997,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2138577774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138577771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &2138577775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138577771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2143588403
 GameObject:
   m_ObjectHideFlags: 0
@@ -4344,6 +6035,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2143588404}
   - component: {fileID: 2143588405}
+  - component: {fileID: 2143588407}
+  - component: {fileID: 2143588406}
   m_Layer: 0
   m_Name: Yellow_Miami
   m_TagString: Untagged
@@ -4416,3 +6109,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2143588406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143588403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954ed76e8c59d5b4c9b845b639ecfb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlackCounter: 0
+  YellowCounter: 0
+  RedCounter: 0
+  BlueCounter: 0
+--- !u!114 &2143588407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143588403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5eeb296ef6c4646a1fe326af414ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

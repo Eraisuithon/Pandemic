@@ -9,7 +9,7 @@ public class Piece : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        position = new Vector3(0, 0, 0);
+        position = GetComponent<RectTransform>().position;
         neighboors = new Dictionary<string, HashSet<string>>
         {
             {"Blue_Chicago", new HashSet<string>() {"Blue_Atlanta", "Blue_Montreal", "Blue_SanFrancisco"} },
@@ -61,6 +61,5 @@ public class Piece : MonoBehaviour
             {"Red_Osaka", new HashSet<string>() {"Red_Tokyo", "Red_Taipei"} },
             {"Red_Sydney", new HashSet<string>() {"Red_Jakarta", "Red_Manila", "Yellow_LosAngeles"} },
         };
-        Debug.Log("Hello World");
     }
 }

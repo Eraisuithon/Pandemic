@@ -31,6 +31,9 @@ public class Drag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndD
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");
+        Debug.Log(rectTransform.anchoredPosition);
+        Debug.Log(eventData.delta);
+        Debug.Log(canvas.scaleFactor);
         rectTransform.anchoredPosition += eventData.delta/canvas.scaleFactor;
     }
 
