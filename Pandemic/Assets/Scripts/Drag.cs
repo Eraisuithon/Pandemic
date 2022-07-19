@@ -39,6 +39,6 @@ public class Drag : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndD
         Debug.Log("OnEndDrag");
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-        GetComponent<RectTransform>().position = GetComponent<Variables>().position;
+        GetComponent<RectTransform>().position = GetComponent<PrevPosition>().position;
     }
 }
