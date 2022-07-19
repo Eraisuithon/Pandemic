@@ -10,6 +10,7 @@ public class Piece : MonoBehaviour
     void Start()
     {
         position = GetComponent<RectTransform>().position;
+        
         neighboors = new Dictionary<string, HashSet<string>>
         {
             {"Blue_Chicago", new HashSet<string>() {"Blue_Atlanta", "Blue_Montreal", "Blue_SanFrancisco"} },
