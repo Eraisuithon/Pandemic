@@ -23,13 +23,8 @@ public class DragSprite : MonoBehaviour
         if (isDragging || !centerPosition) { return; }
         centerPosition = false;
         gameObject.GetComponent<RectTransform>().position = collider.transform.position;
-        //collider.GetComponent<BoxCollider2D>().enabled = false;
-        //Debug.Log(collider.GetComponent<BoxCollider2D>().enabled);
     }
-    //private void OnTriggerExit2D(Collider2D collider)
-    //{
-    //    collider.GetComponent<BoxCollider2D>().enabled = true;
-    //}
+
 
     private void Update()
     {
