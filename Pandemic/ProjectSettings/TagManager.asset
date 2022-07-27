@@ -44,6 +44,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Lines
+    uniqueID: 2054837025
+    locked: 0
   - name: Cities
     uniqueID: 2582127407
     locked: 0

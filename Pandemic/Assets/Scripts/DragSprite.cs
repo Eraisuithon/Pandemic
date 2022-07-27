@@ -4,31 +4,60 @@ using UnityEngine;
 
 public class DragSprite : MonoBehaviour
 {
-    private bool isDragging;
-    private bool centerPosition;
+    private GameObject city;
 
     public void OnMouseDown()
     {
-        isDragging = true;
-        centerPosition = true;
+        GetComponent<Piece>().isDragged = true;
     }
 
     public void OnMouseUp()
     {
-        isDragging = false;
+        GetComponent<Piece>().isDragged = false;
+        if (GetComponent<Piece>().inACity && 
+            (GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(city.name) || GetComponent<Piece>().prevCity==city.name
+            || GetComponent<Piece>().prevCity==city.name))
+        {
+            GetComponent<RectTransform>().position = city.transform.position;
+            GetComponent<Piece>().prevCity = city.name;
+            GetComponent<Piece>().position = transform.position;
+        }
+        else
+        {
+
+            transform.position = GetComponent<Piece>().position;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        city = collider.gameObject;
     }
 
     private void OnTriggerStay2D(Collider2D collider)
     {
-        if (isDragging || !centerPosition) { return; }
-        centerPosition = false;
-        gameObject.GetComponent<RectTransform>().position = collider.transform.position;
+        GetComponent<Piece>().inACity = true;
+
+        if (GetComponent<Piece>().isDragged) return;
+
+        city = collider.gameObject;
+        if (GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(collider.name))
+        {
+            GetComponent<RectTransform>().position = collider.transform.position;
+            GetComponent<Piece>().prevCity = collider.name;
+            GetComponent<Piece>().position = collider.transform.position;
+        }
+
     }
 
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        GetComponent<Piece>().inACity = false;
+    }
 
     private void Update()
     {
-        if (!isDragging) return;
+        if (!GetComponent<Piece>().isDragged) return;
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         transform.Translate(mousePosition);
     }

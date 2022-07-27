@@ -5,11 +5,21 @@ using UnityEngine;
 public class Piece : MonoBehaviour
 {
     public Vector3 position;
+    public string prevCity;
     public Dictionary<string, HashSet<string>> neighboors;
+    public bool inACity;
+    public bool isDragged;
+    public string lastCitySeenIn;
+    public Vector3 lastPositionSeenIn;
     // Start is called before the first frame update
     void Start()
     {
+        isDragged = false;
         position = GetComponent<RectTransform>().position;
+        prevCity = "Blue_Atlanta";
+        lastPositionSeenIn = position;
+        lastCitySeenIn = prevCity;
+        inACity = true;
         
         neighboors = new Dictionary<string, HashSet<string>>
         {
@@ -28,18 +38,18 @@ public class Piece : MonoBehaviour
             {"Yellow_LosAngeles", new HashSet<string>() {"Yellow_MexicoCity", "Blue_Chicago", "Blue_SanFrancisco", "Red_Sydney"} },
             {"Yellow_MexicoCity", new HashSet<string>() {"Yellow_LosAngeles", "Blue_Chicago", "Yellow_Miami", "Yellow_Bogota", "Yellow_Lima"} },
             {"Yellow_Miami", new HashSet<string>() { "Yellow_MexicoCity", "Yellow_Bogota", "Blue_Atlanta", "Blue_Washington" } },
-            {"Yellow_Bogota", new HashSet<string>() { "Yellow_Miami", "Yellow_MexicoCity", "Yellow_Lima", "Yellow_BuenosAires", "Yello_SaoPaulo" } },
+            {"Yellow_Bogota", new HashSet<string>() { "Yellow_Miami", "Yellow_MexicoCity", "Yellow_Lima", "Yellow_BuenosAires", "Yellow_SaoPaulo" } },
             {"Yellow_Lima", new HashSet<string>() { "Yellow_Santiago", "Yellow_Bogota", "Yellow_MexicoCity" } },
             {"Yellow_Santiago", new HashSet<string>() { "Yellow_Lima" } },
             {"Yellow_BuenosAires", new HashSet<string>() { "Yellow_SaoPaulo", "Yellow_Bogota" } },
             {"Yellow_SaoPaulo", new HashSet<string>() { "Yellow_Bogota", "Yellow_BuenosAires", "Blue_Madrid",  "Yellow_Lagos"} },
-            {"Yellow_Lagos", new HashSet<string>() {"Yellow_SaoPaulo", "Yellow_Kinsasa", "Yellow_Khartoum"} },
+            {"Yellow_Lagos", new HashSet<string>() {"Yellow_SaoPaulo", "Yellow_Kinshasa", "Yellow_Khartoum"} },
             {"Yellow_Kinshasa", new HashSet<string>() {"Yellow_Lagos", "Yellow_Khartoum", "Yellow_Johannesburg"} },
-            {"Yellow_Johannesburg", new HashSet<string>() {"Yellow_Kinsasa", "Yellow_Khartoum"} },
-            {"Yellow_Khartoum", new HashSet<string>() {"Yellow_Kinsasa", "Yellow_Johannesburg", "Yellow_Lagos"} },
+            {"Yellow_Johannesburg", new HashSet<string>() {"Yellow_Kinshasa", "Yellow_Khartoum"} },
+            {"Yellow_Khartoum", new HashSet<string>() {"Yellow_Kinshasa", "Yellow_Johannesburg", "Yellow_Lagos"} },
             {"Black_Instanbul", new HashSet<string>() {"Black_Algiers", "Black_Cairo", "Black_Baghdad", "Black_Moscow", "Blue_StPetersburg", "Blue_Milan"} },
             {"Black_Algiers", new HashSet<string>() {"Blue_Madrid", "Blue_Paris", "Black_Instanbul", "Black_Cairo"} },
-            {"Black_Cairo", new HashSet<string>() {"Black_Algiers", "Black_Instanbul", "Black_Baghdad", "Black_Riyadh"} },
+            {"Black_Cairo", new HashSet<string>() {"Black_Algiers", "Black_Instanbul", "Black_Baghdad", "Black_Riyadh", "Yellow_Khartoum"} },
             {"Black_Baghdad", new HashSet<string>() {"Black_Instanbul", "Black_Cairo", "Black_Riyadh", "Black_Karachi", "Black_Tehran"} },
             {"Black_Riyadh", new HashSet<string>() {"Black_Cairo", "Black_Baghdad", "Black_Karachi"} },
             {"Black_Moscow", new HashSet<string>() {"Blue_StPetersburg", "Black_Instanbul", "Black_Tehran"} },
