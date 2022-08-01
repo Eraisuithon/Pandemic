@@ -22,8 +22,11 @@ public class DragResearchStation : MonoBehaviour
     public void OnMouseUp()
     {
         isDragged = false;
-        if (GetComponent<Station>().inACity) // to succeed the drop station must be in a city
+        if (GetComponent<Station>().inACity && !city.GetComponent<City>().hasStation) // to succeed the drop station must be in a city
         {
+            // city now has station
+            city.GetComponent<City>().hasStation = true;
+
             // Centralises the station in the city
             transform.position = city.transform.position;
 

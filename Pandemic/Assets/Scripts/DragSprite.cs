@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DragSprite : MonoBehaviour
 {
-    private GameObject city;
+    private GameObject prevCity;
+    private GameObject nextCity;
     private bool isDragged;
 
     private void Start()
@@ -20,16 +21,19 @@ public class DragSprite : MonoBehaviour
     public void OnMouseUp()
     {
         isDragged = false;
-        if (GetComponent<Piece>().inACity && 
-            (GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(city.name) || GetComponent<Piece>().prevCity==city.name
-            || GetComponent<Piece>().prevCity==city.name))
+        if ((GetComponent<Piece>().inACity && 
+            (GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(nextCity.name) || GetComponent<Piece>().prevCity== nextCity.name
+            || GetComponent<Piece>().prevCity== nextCity.name))
+            || prevCity.GetComponent<City>().hasStation && nextCity.GetComponent<City>().hasStation)
         {
             // Centralises the piece in the city
-            GetComponent<RectTransform>().position = city.transform.position;
+            GetComponent<RectTransform>().position = nextCity.transform.position;
 
             // Updates current city and position at Piece script
-            GetComponent<Piece>().prevCity = city.name;
+            GetComponent<Piece>().prevCity = nextCity.name;
             GetComponent<Piece>().position = transform.position;
+
+            prevCity = nextCity;
         }
         else
         {
@@ -41,7 +45,11 @@ public class DragSprite : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.transform.parent.name != "Cities") return;
-        city = collider.gameObject;
+        nextCity = collider.gameObject;
+        if (prevCity == null)
+        {
+            prevCity = nextCity;
+        }
         GetComponent<Piece>().inACity = true;
     }
 
@@ -52,7 +60,11 @@ public class DragSprite : MonoBehaviour
 
         if (isDragged) return;
 
-        city = collider.gameObject;
+        nextCity = collider.gameObject;
+        if(prevCity == null)
+        {
+            prevCity = nextCity;
+        }
 
 
     }

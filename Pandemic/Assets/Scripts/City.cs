@@ -8,6 +8,7 @@ public class City : MonoBehaviour
     public int YellowCounter;
     public int RedCounter;
     public int BlueCounter;
+    public bool hasStation;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,9 @@ public class City : MonoBehaviour
         YellowCounter = 0;
         RedCounter = 0;
         BlueCounter = 0;
+        hasStation = false;
+        if (name == "Blue_Atlanta")
+            hasStation = true;
     }
 
 }
