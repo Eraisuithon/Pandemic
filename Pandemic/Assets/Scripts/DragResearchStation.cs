@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DragSprite : MonoBehaviour
+public class DragResearchStation : MonoBehaviour
 {
+
     private GameObject city;
     private bool isDragged;
 
@@ -14,27 +15,27 @@ public class DragSprite : MonoBehaviour
 
     public void OnMouseDown()
     {
+        if (GetComponent<Station>().didMove) return;
         isDragged = true;
     }
 
     public void OnMouseUp()
     {
         isDragged = false;
-        if (GetComponent<Piece>().inACity && 
-            (GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(city.name) || GetComponent<Piece>().prevCity==city.name
-            || GetComponent<Piece>().prevCity==city.name))
+        if (GetComponent<Station>().inACity) // to succeed the drop station must be in a city
         {
-            // Centralises the piece in the city
-            GetComponent<RectTransform>().position = city.transform.position;
+            // Centralises the station in the city
+            transform.position = city.transform.position;
 
-            // Updates current city and position at Piece script
-            GetComponent<Piece>().prevCity = city.name;
-            GetComponent<Piece>().position = transform.position;
+            // Changes prev position in Station script
+            GetComponent<Station>().position = transform.position;
+
+            GetComponent<Station>().didMove = true;
         }
         else
         {
             // goes to the position it was lastly at
-            transform.position = GetComponent<Piece>().position;
+            transform.position = GetComponent<Station>().position;
         }
     }
 
@@ -42,25 +43,19 @@ public class DragSprite : MonoBehaviour
     {
         if (collider.transform.parent.name != "Cities") return;
         city = collider.gameObject;
-        GetComponent<Piece>().inACity = true;
+        GetComponent<Station>().inACity = true;
     }
 
     private void OnTriggerStay2D(Collider2D collider)
     {
         if (collider.transform.parent.name != "Cities") return;
-        GetComponent<Piece>().inACity = true;
-
-        if (isDragged) return;
-
-        city = collider.gameObject;
-
-
+        GetComponent<Station>().inACity = true;
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
         if (collider.transform.parent.name != "Cities") return;
-        GetComponent<Piece>().inACity = false;
+        GetComponent<Station>().inACity = false;
     }
 
     private void Update()
@@ -69,4 +64,5 @@ public class DragSprite : MonoBehaviour
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         transform.Translate(mousePosition);
     }
+
 }

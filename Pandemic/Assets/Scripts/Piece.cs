@@ -8,17 +8,11 @@ public class Piece : MonoBehaviour
     public string prevCity;
     public Dictionary<string, HashSet<string>> neighboors;
     public bool inACity;
-    public bool isDragged;
-    public string lastCitySeenIn;
-    public Vector3 lastPositionSeenIn;
     // Start is called before the first frame update
     void Start()
     {
-        isDragged = false;
         position = GetComponent<RectTransform>().position;
         prevCity = "Blue_Atlanta";
-        lastPositionSeenIn = position;
-        lastCitySeenIn = prevCity;
         inACity = true;
         
         neighboors = new Dictionary<string, HashSet<string>>

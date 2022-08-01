@@ -50,6 +50,9 @@ TagManager:
   - name: Cities
     uniqueID: 2582127407
     locked: 0
+  - name: Research Stations
+    uniqueID: 765400429
+    locked: 0
   - name: Pieces
     uniqueID: 18574661
     locked: 0
