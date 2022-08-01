@@ -50,18 +50,13 @@ public class DragSprite : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Just Entered:");
-        Debug.Log(collider); 
-        string nearestCity = null;
-        int nearestDistSquared = 0;
-        foreach (Collider2D c in collider.gameObject.GetComponents<Collider2D>())
-            Debug.Log(c);
-        if (collider.transform.parent.name != "Cities") return;
+        if (collider.transform.parent.name == "ResearchStations")
+            collider.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        if (collider.transform.parent.name != "Cities") 
+            return;
         nextCity = collider.gameObject;
         if (prevCity == null)
-        {
             prevCity = nextCity;
-        }
         GetComponent<Piece>().inACity = true;
     }
 
@@ -69,8 +64,9 @@ public class DragSprite : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        Debug.Log("Just Exited:");
-        Debug.Log(collider);
+        if (collider.transform.parent.name == "ResearchStations")
+            collider.gameObject.layer = LayerMask.NameToLayer("Default");
+
         if (collider.name != nextCity.name) return;
         GetComponent<Piece>().inACity = false;
     }
