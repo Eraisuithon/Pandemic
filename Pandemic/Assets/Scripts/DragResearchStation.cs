@@ -26,7 +26,6 @@ public class DragResearchStation : MonoBehaviour
         {
             // city now has station
             city.GetComponent<City>().hasStation = true;
-
             // Centralises the station in the city
             transform.position = city.transform.position;
 
@@ -49,11 +48,6 @@ public class DragResearchStation : MonoBehaviour
         GetComponent<Station>().inACity = true;
     }
 
-    private void OnTriggerStay2D(Collider2D collider)
-    {
-        if (collider.transform.parent.name != "Cities") return;
-        GetComponent<Station>().inACity = true;
-    }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
