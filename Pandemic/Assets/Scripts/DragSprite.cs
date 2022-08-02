@@ -26,7 +26,7 @@ public class DragSprite : MonoBehaviour
             || (prevCity.GetComponent<City>().hasStation && nextCity.GetComponent<City>().hasStation))
         {
             // Centralises the piece in the city
-            GetComponent<RectTransform>().position = nextCity.transform.position;
+            transform.position = nextCity.transform.position;
 
             // Updates current city and position at Piece script
             GetComponent<Piece>().prevCity = nextCity.name;

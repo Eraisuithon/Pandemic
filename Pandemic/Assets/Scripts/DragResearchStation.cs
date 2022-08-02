@@ -51,7 +51,7 @@ public class DragResearchStation : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.name != city.name) return;
+        if (city is null || collider.name != city.name) return;
         GetComponent<Station>().inACity = false;
     }
 

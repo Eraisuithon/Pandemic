@@ -11,7 +11,7 @@ public class Piece : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        position = GetComponent<RectTransform>().position;
+        position = transform.position;
         prevCity = "Blue_Atlanta";
         inACity = true;
         
