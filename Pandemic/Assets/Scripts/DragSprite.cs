@@ -38,12 +38,6 @@ public class DragSprite : MonoBehaviour
         {
             // goes to the position it was lastly at
             transform.position = GetComponent<Piece>().position;
-            Debug.Log("-------------");
-            Debug.Log(GetComponent<Piece>().prevCity); //Atlanta
-            Debug.Log(nextCity); // Chicago
-            Debug.Log(GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(nextCity.name)); // true
-            Debug.Log(prevCity.GetComponent<City>().hasStation); // true
-            Debug.Log(GetComponent<Piece>().inACity);
 
         }
     }

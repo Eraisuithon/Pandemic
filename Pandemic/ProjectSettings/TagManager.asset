@@ -53,6 +53,9 @@ TagManager:
   - name: Research Stations
     uniqueID: 765400429
     locked: 0
+  - name: Virus
+    uniqueID: 1782411531
+    locked: 0
   - name: Pieces
     uniqueID: 18574661
     locked: 0
