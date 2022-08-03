@@ -21,10 +21,13 @@ public class DragSprite : MonoBehaviour
     public void OnMouseUp()
     {
         isDragged = false;
-        if (GetComponent<Piece>().inACity && 
+        if (GetComponent<Piece>().inACity && GetComponent<Piece>().numOfMoves < 4 &&
             ((GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(nextCity.name) || GetComponent<Piece>().prevCity == nextCity.name))
             || (prevCity.GetComponent<City>().hasStation && nextCity.GetComponent<City>().hasStation))
         {
+            // Player made a move so we count it
+            GetComponent<Piece>().numOfMoves++;
+
             // Centralises the piece in the city
             transform.position = nextCity.transform.position;
 

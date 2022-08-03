@@ -8,9 +8,11 @@ public class Piece : MonoBehaviour
     public string prevCity;
     public Dictionary<string, HashSet<string>> neighboors;
     public bool inACity;
+    public short numOfMoves;
     // Start is called before the first frame update
     void Start()
     {
+        numOfMoves = 0;
         position = transform.position;
         prevCity = "Blue_Atlanta";
         inACity = true;

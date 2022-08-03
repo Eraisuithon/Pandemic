@@ -15,7 +15,7 @@ public class DragResearchStation : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (GetComponent<Station>().didMove) return;
+        if (GetComponent<Station>().didMove && Board.stationsAvailable!=0) return;
         isDragged = true;
     }
 
@@ -24,6 +24,11 @@ public class DragResearchStation : MonoBehaviour
         isDragged = false;
         if (GetComponent<Station>().inACity && !city.GetComponent<City>().hasStation) // to succeed the drop station must be in a city
         {
+            // Every time a station is used, there is one available station less
+            // If there are no stations available then we can use the stations on board
+            if (Board.stationsAvailable > 0)
+                Board.stationsAvailable--;
+
             // city now has station
             city.GetComponent<City>().hasStation = true;
             // Centralises the station in the city
