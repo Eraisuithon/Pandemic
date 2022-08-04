@@ -50,8 +50,8 @@ public class DragSprite : MonoBehaviour
     {
         isDragged = false;
         if (GetComponent<Piece>().inACity &&
-            ((GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(nextCity.name) || GetComponent<Piece>().prevCity == nextCity.name))
-            || (prevCity.GetComponent<City>().hasStation && nextCity.GetComponent<City>().hasStation))
+            (GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(nextCity.name)
+            || prevCity.GetComponent<City>().hasStation && nextCity.GetComponent<City>().hasStation))
         {
             // Player made a move so we count it
             GetComponent<Piece>().numOfMoves++;

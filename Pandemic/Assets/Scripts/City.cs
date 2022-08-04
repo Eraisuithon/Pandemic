@@ -42,6 +42,13 @@ public class City : MonoBehaviour
             pieces[1].transform.position = new Vector3(transform.position[0] + 0.288675f, transform.position[1] - 0.166667f, transform.position[2]);
             pieces[2].transform.position = new Vector3(transform.position[0], transform.position[1] + 0.333333f, transform.position[2]);
         }
+        else if (pieces.Count == 4)
+        {
+            pieces[0].transform.position = new Vector3(transform.position[0] - 0.235702f, transform.position[1] - 0.235702f, transform.position[2]);
+            pieces[1].transform.position = new Vector3(transform.position[0] + 0.235702f, transform.position[1] - 0.235702f, transform.position[2]);
+            pieces[2].transform.position = new Vector3(transform.position[0] + 0.235702f, transform.position[1] + 0.235702f, transform.position[2]);
+            pieces[3].transform.position = new Vector3(transform.position[0] - 0.235702f, transform.position[1] + 0.235702f, transform.position[2]);
+        }
     }
 
 }
