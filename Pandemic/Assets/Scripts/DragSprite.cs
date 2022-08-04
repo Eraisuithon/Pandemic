@@ -11,7 +11,32 @@ public class DragSprite : MonoBehaviour
     private void Start()
     {
         isDragged = false;
-    }
+
+        switch (name)
+        {
+            case "purple_piece":
+                Board.isDispatcherPlaying = true;
+                break;
+            case "orange_card":
+                Board.isMedicPlaying = true;
+                break;
+            case "white_piece":
+                Board.isScientistPlaying = true;
+                break;
+            case "grey_piece":
+                Board.isResearcherPlaying = true;
+                break;
+            case "green_piece":
+                Board.isOperationsExpertPlaying = true;
+                break;
+            case "blue_piece":
+                Board.isContingencyPlannerPlaying = true;
+                break;
+            case "darkGreen_piece":
+                Board.isQuarantineSpecialistPlaying = true;
+                break;
+        }
+        }
 
     public void OnMouseDown()
     {
@@ -21,7 +46,7 @@ public class DragSprite : MonoBehaviour
     public void OnMouseUp()
     {
         isDragged = false;
-        if (GetComponent<Piece>().inACity && GetComponent<Piece>().numOfMoves < 4 &&
+        if (GetComponent<Piece>().inACity &&
             ((GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(nextCity.name) || GetComponent<Piece>().prevCity == nextCity.name))
             || (prevCity.GetComponent<City>().hasStation && nextCity.GetComponent<City>().hasStation))
         {
@@ -36,12 +61,16 @@ public class DragSprite : MonoBehaviour
             GetComponent<Piece>().position = transform.position;
 
             prevCity = nextCity;
+            if (GetComponent<Piece>().numOfMoves == 4)
+            {
+                Board.nextPlayer(gameObject);
+                GetComponent<Piece>().numOfMoves = 0;
+            }
         }
         else
         {
             // goes to the position it was lastly at
             transform.position = GetComponent<Piece>().position;
-
         }
     }
 
@@ -61,9 +90,6 @@ public class DragSprite : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.transform.parent.name == "ResearchStations")
-            collider.gameObject.layer = LayerMask.NameToLayer("Default");
-
         if (collider.name != nextCity.name) return;
         GetComponent<Piece>().inACity = false;
     }
