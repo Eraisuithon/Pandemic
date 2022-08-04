@@ -36,7 +36,10 @@ public class DragSprite : MonoBehaviour
                 Board.isQuarantineSpecialistPlaying = true;
                 break;
         }
-        }
+        GameObject Atlanta = GameObject.Find("Blue_Atlanta");
+        Atlanta.GetComponent<City>().pieces.Add(gameObject);
+        Atlanta.GetComponent<City>().place();
+    }
 
     public void OnMouseDown()
     {
@@ -60,7 +63,14 @@ public class DragSprite : MonoBehaviour
             GetComponent<Piece>().prevCity = nextCity.name;
             GetComponent<Piece>().position = transform.position;
 
+            prevCity.GetComponent<City>().pieces.Remove(gameObject);
+            prevCity.GetComponent<City>().place();
+            nextCity.GetComponent<City>().pieces.Add(gameObject);
+            nextCity.GetComponent<City>().place();
+
             prevCity = nextCity;
+
+            // if this is the 4th move then the next player will play
             if (GetComponent<Piece>().numOfMoves == 4)
             {
                 Board.nextPlayer(gameObject);
