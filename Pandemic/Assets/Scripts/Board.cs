@@ -12,6 +12,9 @@ public class Board : MonoBehaviour
     [Header("Character Playing")]
     public static GameObject currentPlayer;
 
+    // how much transparent should the pieces be
+    private static float alpha = 0.75f;
+
     public static void deactivateOthers()
     {
         foreach(GameObject p in players)
@@ -19,6 +22,8 @@ public class Board : MonoBehaviour
             if (GameObject.ReferenceEquals(p, currentPlayer))
             {
                 p.layer = LayerMask.NameToLayer("Default");
+                p.GetComponent<SpriteRenderer>().sprite = p.GetComponent<DragSprite>().secondImage;
+
             }
             else
             {
@@ -26,7 +31,7 @@ public class Board : MonoBehaviour
 
                 // Make pieces that aren't playing transparent
                 Color tmp = p.GetComponent<SpriteRenderer>().color;
-                tmp.a = 0.6f;
+                tmp.a = alpha;
                 p.GetComponent<SpriteRenderer>().color = tmp;
             }
 
@@ -43,14 +48,20 @@ public class Board : MonoBehaviour
         prevPlayer.layer = LayerMask.NameToLayer("Ignore Raycast");
         // Making previous player transparent
         Color tmp = prevPlayer.GetComponent<SpriteRenderer>().color;
-        tmp.a = 0.6f;
+        tmp.a = alpha;
         prevPlayer.GetComponent<SpriteRenderer>().color = tmp;
+
+        // No outliner
+        prevPlayer.GetComponent<SpriteRenderer>().sprite = prevPlayer.GetComponent<DragSprite>().firstImage;
 
         nextPlayer.layer = LayerMask.NameToLayer("Default");
         // Making new player not transparent
         tmp = nextPlayer.GetComponent<SpriteRenderer>().color;
         tmp.a = 1f;
         nextPlayer.GetComponent<SpriteRenderer>().color = tmp;
+
+        // With outliner
+        nextPlayer.GetComponent<SpriteRenderer>().sprite = nextPlayer.GetComponent<DragSprite>().secondImage;
 
         currentPlayer = nextPlayer;
     }

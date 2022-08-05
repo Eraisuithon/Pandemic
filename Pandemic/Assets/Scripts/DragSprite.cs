@@ -9,8 +9,14 @@ public class DragSprite : MonoBehaviour
     public GameObject nextCity;
     private bool isDragged;
 
+    [Header("Image with contour")]
+    public Sprite secondImage;
+    [HideInInspector]
+    public Sprite firstImage;
+
     private void Awake()
     {
+        firstImage = GetComponent<SpriteRenderer>().sprite;
         switch (name)
         {
             case "purple_piece":
