@@ -5,40 +5,48 @@ using UnityEngine;
 public class DragSprite : MonoBehaviour
 {
     private GameObject prevCity;
-    private GameObject nextCity;
+    [HideInInspector]
+    public GameObject nextCity;
     private bool isDragged;
 
+    private void Awake()
+    {
+        switch (name)
+        {
+            case "purple_piece":
+                Board.players.Add(GameObject.Find("purple_piece"));
+                break;
+            case "orange_card":
+                Board.players.Add(GameObject.Find("orange_piece"));
+                break;
+            case "white_piece":
+                Board.players.Add(GameObject.Find("white_piece"));
+                break;
+            case "grey_piece":
+                Board.players.Add(GameObject.Find("grey_piece"));
+                break;
+            case "green_piece":
+                Board.players.Add(GameObject.Find("green_piece"));
+                break;
+            case "blue_piece":
+                Board.players.Add(GameObject.Find("blue_piece"));
+                break;
+            case "darkGreen_piece":
+                Board.players.Add(GameObject.Find("darkGreen_piece"));
+                break;
+        }
+        Board.chooseFirstPlayer();
+        Board.deactivateOthers();
+    }
     private void Start()
     {
         isDragged = false;
 
-        switch (name)
-        {
-            case "purple_piece":
-                Board.isDispatcherPlaying = true;
-                break;
-            case "orange_card":
-                Board.isMedicPlaying = true;
-                break;
-            case "white_piece":
-                Board.isScientistPlaying = true;
-                break;
-            case "grey_piece":
-                Board.isResearcherPlaying = true;
-                break;
-            case "green_piece":
-                Board.isOperationsExpertPlaying = true;
-                break;
-            case "blue_piece":
-                Board.isContingencyPlannerPlaying = true;
-                break;
-            case "darkGreen_piece":
-                Board.isQuarantineSpecialistPlaying = true;
-                break;
-        }
         GameObject Atlanta = GameObject.Find("Blue_Atlanta");
         Atlanta.GetComponent<City>().pieces.Add(gameObject);
         Atlanta.GetComponent<City>().place();
+
+        prevCity = nextCity = Atlanta;
     }
 
     public void OnMouseDown()
@@ -51,7 +59,7 @@ public class DragSprite : MonoBehaviour
         isDragged = false;
         if (GetComponent<Piece>().inACity &&
             (GetComponent<Piece>().neighboors[GetComponent<Piece>().prevCity].Contains(nextCity.name)
-            || prevCity.GetComponent<City>().hasStation && nextCity.GetComponent<City>().hasStation))
+            || prevCity.GetComponent<City>().hasStation && nextCity.GetComponent<City>().hasStation && !GameObject.ReferenceEquals(prevCity, nextCity)))
         {
             // Player made a move so we count it
             GetComponent<Piece>().numOfMoves++;
@@ -59,21 +67,23 @@ public class DragSprite : MonoBehaviour
             // Centralises the piece in the city
             transform.position = nextCity.transform.position;
 
-            // Updates current city and position at Piece script
-            GetComponent<Piece>().prevCity = nextCity.name;
-            GetComponent<Piece>().position = transform.position;
 
+            // Each city has a list with the pieces in it
+            int c = prevCity.GetComponent<City>().pieces.Count;
             prevCity.GetComponent<City>().pieces.Remove(gameObject);
             prevCity.GetComponent<City>().place();
             nextCity.GetComponent<City>().pieces.Add(gameObject);
             nextCity.GetComponent<City>().place();
+
+            // Updates current city and position at Piece script
+            GetComponent<Piece>().prevCity = nextCity.name;
 
             prevCity = nextCity;
 
             // if this is the 4th move then the next player will play
             if (GetComponent<Piece>().numOfMoves == 4)
             {
-                Board.nextPlayer(gameObject);
+                Board.nextPlayer();
                 GetComponent<Piece>().numOfMoves = 0;
             }
         }
@@ -88,7 +98,7 @@ public class DragSprite : MonoBehaviour
     {
         if (collider.transform.parent.name == "ResearchStations")
             collider.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
-        if (collider.transform.parent.name != "Cities") 
+        if (collider.transform.parent.name != "Cities" || !isDragged) 
             return;
         nextCity = collider.gameObject;
         if (prevCity == null)
@@ -100,7 +110,7 @@ public class DragSprite : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.name != nextCity.name) return;
+        if (collider.name != nextCity.name || !isDragged) return;
         GetComponent<Piece>().inACity = false;
     }
 
