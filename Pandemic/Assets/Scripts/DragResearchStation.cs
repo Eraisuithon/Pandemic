@@ -6,8 +6,12 @@ public class DragResearchStation : MonoBehaviour
 {
     public void OnMouseDown()
     {
+        Debug.Log("Pressed");
         if (GetComponent<Station>().didMove && Board.stationsAvailable!=0) return;
         if (Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().hasStation) return;
+        // The city will get this station
+        Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station = gameObject;
+
         transform.position = Board.currentPlayer.GetComponent<DragSprite>().nextCity.transform.position;
 
         // Every time a station is used, there is one available station less
@@ -25,8 +29,8 @@ public class DragResearchStation : MonoBehaviour
         // if this is the 4th move then the next player will play
         if (Board.currentPlayer.GetComponent<Piece>().numOfMoves == 4)
         {
-            Board.nextPlayer();
             Board.currentPlayer.GetComponent<Piece>().numOfMoves = 0;
+            Board.nextPlayer();
         }
     }
 }

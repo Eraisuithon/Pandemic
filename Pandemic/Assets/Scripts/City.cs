@@ -9,6 +9,7 @@ public class City : MonoBehaviour
     public int RedCounter;
     public int BlueCounter;
     public bool hasStation; // Default value of bool is false
+    public GameObject station;
     public List<GameObject> pieces = new List<GameObject>();
     void Awake()
     {

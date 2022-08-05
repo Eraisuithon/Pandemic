@@ -51,6 +51,13 @@ public class Board : MonoBehaviour
         tmp.a = alpha;
         prevPlayer.GetComponent<SpriteRenderer>().color = tmp;
 
+        // Activate the station of the city of the previous piece
+        if(prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station != null)
+            prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station.layer = LayerMask.NameToLayer("Default");
+        Debug.Log(prevPlayer.GetComponent<DragSprite>().nextCity);
+        if (prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station == null)
+            Debug.Log("Nothing");
+
         // No outliner
         prevPlayer.GetComponent<SpriteRenderer>().sprite = prevPlayer.GetComponent<DragSprite>().firstImage;
 
@@ -59,6 +66,10 @@ public class Board : MonoBehaviour
         tmp = nextPlayer.GetComponent<SpriteRenderer>().color;
         tmp.a = 1f;
         nextPlayer.GetComponent<SpriteRenderer>().color = tmp;
+
+        // Deactivate the station of the city of the previous piece
+        if(nextPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station != null)
+            nextPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station.layer = LayerMask.NameToLayer("Ignore Raycast");
 
         // With outliner
         nextPlayer.GetComponent<SpriteRenderer>().sprite = nextPlayer.GetComponent<DragSprite>().secondImage;

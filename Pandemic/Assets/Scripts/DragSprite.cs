@@ -89,8 +89,12 @@ public class DragSprite : MonoBehaviour
             // if this is the 4th move then the next player will play
             if (GetComponent<Piece>().numOfMoves == 4)
             {
-                Board.nextPlayer();
                 GetComponent<Piece>().numOfMoves = 0;
+                Board.nextPlayer();
+            }
+            else if(GetComponent<Piece>().numOfMoves >= 5)
+            {
+                Debug.Log(GetComponent<Piece>().numOfMoves);
             }
         }
         else
@@ -116,6 +120,8 @@ public class DragSprite : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
+        if (collider.transform.parent.name == "ResearchStations")
+            collider.gameObject.layer = LayerMask.NameToLayer("Default");
         if (collider.name != nextCity.name || !isDragged) return;
         GetComponent<Piece>().inACity = false;
     }
