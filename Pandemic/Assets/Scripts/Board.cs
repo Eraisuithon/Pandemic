@@ -17,9 +17,18 @@ public class Board : MonoBehaviour
         foreach(GameObject p in players)
         {
             if (GameObject.ReferenceEquals(p, currentPlayer))
+            {
                 p.layer = LayerMask.NameToLayer("Default");
+            }
             else
+            {
                 p.layer = LayerMask.NameToLayer("Ignore Raycast");
+
+                // Make pieces that aren't playing transparent
+                Color tmp = p.GetComponent<SpriteRenderer>().color;
+                tmp.a = 0.6f;
+                p.GetComponent<SpriteRenderer>().color = tmp;
+            }
 
         }
     }
@@ -32,7 +41,16 @@ public class Board : MonoBehaviour
     private static void changeTurn(GameObject prevPlayer, GameObject nextPlayer)
     {
         prevPlayer.layer = LayerMask.NameToLayer("Ignore Raycast");
+        // Making previous player transparent
+        Color tmp = prevPlayer.GetComponent<SpriteRenderer>().color;
+        tmp.a = 0.6f;
+        prevPlayer.GetComponent<SpriteRenderer>().color = tmp;
+
         nextPlayer.layer = LayerMask.NameToLayer("Default");
+        // Making new player not transparent
+        tmp = nextPlayer.GetComponent<SpriteRenderer>().color;
+        tmp.a = 1f;
+        nextPlayer.GetComponent<SpriteRenderer>().color = tmp;
 
         currentPlayer = nextPlayer;
     }
