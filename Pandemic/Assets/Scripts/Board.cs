@@ -45,7 +45,9 @@ public class Board : MonoBehaviour
 
     private static void changeTurn(GameObject prevPlayer, GameObject nextPlayer)
     {
-        prevPlayer.layer = LayerMask.NameToLayer("Ignore Raycast");
+        // prevPlayer.layer = LayerMask.NameToLayer("Ignore Raycast");
+        prevPlayer.GetComponent<CircleCollider2D>().enabled = false;
+
         // Making previous player transparent
         Color tmp = prevPlayer.GetComponent<SpriteRenderer>().color;
         tmp.a = alpha;
@@ -53,15 +55,13 @@ public class Board : MonoBehaviour
 
         // Activate the station of the city of the previous piece
         if(prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station != null)
-            prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station.layer = LayerMask.NameToLayer("Default");
-        Debug.Log(prevPlayer.GetComponent<DragSprite>().nextCity);
-        if (prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station == null)
-            Debug.Log("Nothing");
+            prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station.layer = 3;
 
         // No outliner
         prevPlayer.GetComponent<SpriteRenderer>().sprite = prevPlayer.GetComponent<DragSprite>().firstImage;
 
         nextPlayer.layer = LayerMask.NameToLayer("Default");
+        nextPlayer.GetComponent<CircleCollider2D>().enabled = true;
         // Making new player not transparent
         tmp = nextPlayer.GetComponent<SpriteRenderer>().color;
         tmp.a = 1f;
@@ -80,6 +80,7 @@ public class Board : MonoBehaviour
     {
         GameObject prevPlayer = currentPlayer;
 
+        // Get's the index of the next player in the list
         int index = 0;
         foreach(GameObject p in players)
         {
@@ -87,6 +88,7 @@ public class Board : MonoBehaviour
             if (GameObject.ReferenceEquals(p, currentPlayer))
                 break;
         }
+        // if previous player was at the end of the list then next player is at index 0
         index %= players.Count;
         GameObject nextPlayer = players[index];
 

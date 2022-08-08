@@ -57,6 +57,7 @@ public class DragSprite : MonoBehaviour
 
     public void OnMouseDown()
     {
+        Debug.Log("Piece Pressed");
         isDragged = true;
     }
 
