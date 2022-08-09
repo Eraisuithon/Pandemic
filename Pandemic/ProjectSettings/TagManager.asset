@@ -56,6 +56,9 @@ TagManager:
   - name: Virus
     uniqueID: 1782411531
     locked: 0
+  - name: Counters
+    uniqueID: 1386015639
+    locked: 0
   - name: Pieces
     uniqueID: 18574661
     locked: 0
