@@ -7,7 +7,41 @@ public class Virus : MonoBehaviour, IPointerDownHandler
 {
     private void OnMouseDown()
     {
-        Debug.Log("To Cure");
+        // Checking which color was the clicked virus and wether there where any on that city
+        if (name == "RedVirus" && Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().RedCounter > 0)
+        {
+            Board.redVirusAvailable++;
+            Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().RedCounter--;
+        }
+        else if (name == "BlueVirus" && Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlueCounter > 0)
+        {
+            Board.blueVirusAvailable++;
+            Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlueCounter--;
+        }
+        else if (name == "BlackVirus" && Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlackCounter > 0)
+        {
+            Board.blackVirusAvailable++;
+            Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlackCounter--;
+        }
+        else if (name == "YellowVirus" && Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter > 0) 
+        {
+            Board.yellowVirusAvailable++;
+            Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter--;
+        }
+        else
+        {
+            // if we got here then the player didn't play and hence we shouldn't count it as a move
+            return;
+        }
+
+        // This counts as a player move
+        Board.currentPlayer.GetComponent<Piece>().numOfMoves++;
+        // if this is the 4th move then the next player will play
+        if (Board.currentPlayer.GetComponent<Piece>().numOfMoves == 4)
+        {
+            Board.currentPlayer.GetComponent<Piece>().numOfMoves = 0;
+            Board.nextPlayer();
+        }
     }
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -48,13 +82,5 @@ public class Virus : MonoBehaviour, IPointerDownHandler
             Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter++;
         }
 
-        // This counts as a player move
-        Board.currentPlayer.GetComponent<Piece>().numOfMoves++;
-        // if this is the 4th move then the next player will play
-        if (Board.currentPlayer.GetComponent<Piece>().numOfMoves == 4)
-        {
-            Board.currentPlayer.GetComponent<Piece>().numOfMoves = 0;
-            Board.nextPlayer();
-        }
     }
 }
