@@ -57,7 +57,6 @@ public class DragSprite : MonoBehaviour
 
     public void OnMouseDown()
     {
-        Debug.Log("Piece Pressed");
         isDragged = true;
     }
 
@@ -93,10 +92,7 @@ public class DragSprite : MonoBehaviour
                 GetComponent<Piece>().numOfMoves = 0;
                 Board.nextPlayer();
             }
-            else if(GetComponent<Piece>().numOfMoves >= 5)
-            {
-                Debug.Log(GetComponent<Piece>().numOfMoves);
-            }
+
         }
         else
         {
@@ -108,7 +104,9 @@ public class DragSprite : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.transform.parent.name == "ResearchStations")
+        {
             collider.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        }
         if (collider.transform.parent.name != "Cities" || !isDragged) 
             return;
         nextCity = collider.gameObject;

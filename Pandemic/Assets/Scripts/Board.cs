@@ -5,6 +5,10 @@ using UnityEngine;
 public class Board : MonoBehaviour
 {
     public static short stationsAvailable = 5;
+    public static short redVirusAvailable = 20;
+    public static short blueVirusAvailable = 20;
+    public static short blackVirusAvailable = 20;
+    public static short yellowVirusAvailable = 20;
 
     [Header("Who is playing?")]
     public static List<GameObject> players = new List<GameObject>();
@@ -23,7 +27,6 @@ public class Board : MonoBehaviour
             {
                 p.layer = LayerMask.NameToLayer("Default");
                 p.GetComponent<SpriteRenderer>().sprite = p.GetComponent<DragSprite>().secondImage;
-
             }
             else
             {
@@ -34,7 +37,6 @@ public class Board : MonoBehaviour
                 tmp.a = alpha;
                 p.GetComponent<SpriteRenderer>().color = tmp;
             }
-
         }
     }
 
@@ -45,6 +47,7 @@ public class Board : MonoBehaviour
 
     private static void changeTurn(GameObject prevPlayer, GameObject nextPlayer)
     {
+
         // prevPlayer.layer = LayerMask.NameToLayer("Ignore Raycast");
         prevPlayer.GetComponent<CircleCollider2D>().enabled = false;
 
@@ -54,8 +57,8 @@ public class Board : MonoBehaviour
         prevPlayer.GetComponent<SpriteRenderer>().color = tmp;
 
         // Activate the station of the city of the previous piece
-        if(prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station != null)
-            prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station.layer = 3;
+        if (prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station != null)
+            prevPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station.layer = 3; // <---------------------------- Questionable! why not 0 (I don't remember)
 
         // No outliner
         prevPlayer.GetComponent<SpriteRenderer>().sprite = prevPlayer.GetComponent<DragSprite>().firstImage;
@@ -66,6 +69,7 @@ public class Board : MonoBehaviour
         tmp = nextPlayer.GetComponent<SpriteRenderer>().color;
         tmp.a = 1f;
         nextPlayer.GetComponent<SpriteRenderer>().color = tmp;
+
 
         // Deactivate the station of the city of the previous piece
         if(nextPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station != null)
@@ -78,6 +82,7 @@ public class Board : MonoBehaviour
     }
     public static GameObject nextPlayer()
     {
+
         GameObject prevPlayer = currentPlayer;
 
         // Get's the index of the next player in the list
@@ -94,6 +99,7 @@ public class Board : MonoBehaviour
 
 
         changeTurn(prevPlayer, nextPlayer);
+
         return nextPlayer;
     }
 }

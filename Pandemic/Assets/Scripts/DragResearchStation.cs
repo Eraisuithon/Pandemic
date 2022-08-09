@@ -6,11 +6,11 @@ public class DragResearchStation : MonoBehaviour
 {
     public void OnMouseDown()
     {
-        Debug.Log("Station Pressed");
         if (GetComponent<Station>().didMove && Board.stationsAvailable!=0) return;
         if (Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().hasStation) return;
         // The city will get this station
         Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().station = gameObject;
+
         Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().hasStation = true;
 
         transform.position = Board.currentPlayer.GetComponent<DragSprite>().nextCity.transform.position;
