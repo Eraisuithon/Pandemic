@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Virus : MonoBehaviour
+public class Virus : MonoBehaviour, IPointerDownHandler
 {
-    public void OnMouseDown()
+    private void OnMouseDown()
     {
+        Debug.Log("To Cure");
+    }
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (eventData.button != PointerEventData.InputButton.Right) return;
+
         bool areAvailable = false;
         if (name == "RedVirus" && Board.redVirusAvailable > 0 ||
             name == "BlueVirus" && Board.blueVirusAvailable > 0 ||
