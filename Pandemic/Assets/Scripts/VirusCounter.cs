@@ -27,7 +27,7 @@ public class VirusCounter : MonoBehaviour
             GetComponent<TextMesh>().text = Board.blueVirusAvailable.ToString() + 'x';
         else if (transform.parent.name == "YellowVirus")
             GetComponent<TextMesh>().text = Board.yellowVirusAvailable.ToString() + 'x';
-        else if (transform.parent.name == "BlackCounter")
+        else if (transform.parent.name == "BlackVirus")
             GetComponent<TextMesh>().text = Board.blackVirusAvailable.ToString() + 'x';
     }
 }
