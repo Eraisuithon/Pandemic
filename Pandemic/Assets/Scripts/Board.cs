@@ -9,6 +9,10 @@ public class Board : MonoBehaviour
     public static short blueVirusAvailable = 20;
     public static short blackVirusAvailable = 20;
     public static short yellowVirusAvailable = 20;
+    public static bool isRedCured = false;
+    public static bool isBlueCured = false;
+    public static bool isBlackCured = false;
+    public static bool isYellowCured = false;
 
     [Header("Who is playing?")]
     public static List<GameObject> players = new List<GameObject>();

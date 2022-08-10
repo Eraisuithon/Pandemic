@@ -8,25 +8,58 @@ public class Virus : MonoBehaviour, IPointerDownHandler
     private void OnMouseDown()
     {
         // Checking which color was the clicked virus and wether there where any on that city
+        // for every color we check wether the virus has been cured
         if (name == "RedVirus" && Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().RedCounter > 0)
         {
-            Board.redVirusAvailable++;
-            Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().RedCounter--;
+            if (Board.isRedCured)
+            {
+                Board.redVirusAvailable += Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().RedCounter;
+                Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().RedCounter = 0;
+            }
+            else
+            {
+                Board.redVirusAvailable++;
+                Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().RedCounter--;
+            }
         }
         else if (name == "BlueVirus" && Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlueCounter > 0)
         {
-            Board.blueVirusAvailable++;
-            Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlueCounter--;
+            if (Board.isBlueCured)
+            {
+                Board.blueVirusAvailable += Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlueCounter;
+                Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlueCounter = 0;
+            }
+            else
+            {
+                Board.blueVirusAvailable++;
+                Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlueCounter--;
+            }
         }
         else if (name == "BlackVirus" && Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlackCounter > 0)
         {
-            Board.blackVirusAvailable++;
-            Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlackCounter--;
+            if (Board.isBlackCured)
+            {
+                Board.blackVirusAvailable += Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlackCounter;
+                Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlackCounter = 0;
+            }
+            else
+            {
+                Board.blackVirusAvailable++;
+                Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlackCounter--;
+            }
         }
         else if (name == "YellowVirus" && Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter > 0) 
         {
-            Board.yellowVirusAvailable++;
-            Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter--;
+            if (Board.isYellowCured)
+            {
+                Board.yellowVirusAvailable += Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter;
+                Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter = 0;
+            }
+            else
+            {
+                Board.yellowVirusAvailable++;
+                Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter--;
+            }
         }
         else
         {
@@ -45,7 +78,34 @@ public class Virus : MonoBehaviour, IPointerDownHandler
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (eventData.button != PointerEventData.InputButton.Right) return;
+        if (eventData.button == PointerEventData.InputButton.Right && Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().hasStation)
+        {
+            // Checking to see if I should count this as a move
+            bool played = true;
+            if (name == "RedVirus" && !Board.isRedCured)
+                Board.isRedCured = true;
+            else if(name == "BlueVirus" && !Board.isBlueCured)
+                Board.isBlueCured = true;
+            else if(name == "BlackVirus" && !Board.isBlackCured)
+                Board.isBlackCured = true;
+            else if(name == "YellowVirus" && !Board.isYellowCured)
+                Board.isYellowCured = true;
+            else
+                played = false;
+            
+            if (played)
+            {
+                // This counts as a player move
+                Board.currentPlayer.GetComponent<Piece>().numOfMoves++;
+                // if this is the 4th move then the next player will play
+                if (Board.currentPlayer.GetComponent<Piece>().numOfMoves == 4)
+                {
+                    Board.currentPlayer.GetComponent<Piece>().numOfMoves = 0;
+                    Board.nextPlayer();
+                }
+            }
+        }
+        if (eventData.button != PointerEventData.InputButton.Middle) return;
 
         bool areAvailable = false;
         if (name == "RedVirus" && Board.redVirusAvailable > 0 ||

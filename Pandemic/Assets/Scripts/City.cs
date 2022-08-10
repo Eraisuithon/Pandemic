@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class City : MonoBehaviour
 {
-    public int BlackCounter = 0; // Default value of int is 0
-    public int YellowCounter = 0;
-    public int RedCounter = 0;
-    public int BlueCounter = 0;
+    public short BlackCounter = 0; // Default value of int is 0
+    public short YellowCounter = 0;
+    public short RedCounter = 0;
+    public short BlueCounter = 0;
     public bool hasStation; // Default value of bool is false
     public GameObject station;
     public List<GameObject> pieces = new List<GameObject>();
