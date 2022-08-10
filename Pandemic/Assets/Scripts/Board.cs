@@ -13,6 +13,10 @@ public class Board : MonoBehaviour
     public static bool isBlueCured = false;
     public static bool isBlackCured = false;
     public static bool isYellowCured = false;
+    public static bool isRedEradicated = false;
+    public static bool isBlueEradicated = false;
+    public static bool isBlackEradicated = false;
+    public static bool isYellowEradicated = false;
 
     [Header("Who is playing?")]
     public static List<GameObject> players = new List<GameObject>();

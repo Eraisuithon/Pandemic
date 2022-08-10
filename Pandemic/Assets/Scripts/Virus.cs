@@ -15,6 +15,9 @@ public class Virus : MonoBehaviour, IPointerDownHandler
             {
                 Board.redVirusAvailable += Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().RedCounter;
                 Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().RedCounter = 0;
+                // Check if eradicated
+                if (Board.redVirusAvailable == 20)
+                    Board.isRedEradicated = true;
             }
             else
             {
@@ -28,6 +31,9 @@ public class Virus : MonoBehaviour, IPointerDownHandler
             {
                 Board.blueVirusAvailable += Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlueCounter;
                 Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlueCounter = 0;
+                // Check if eradicated
+                if (Board.blueVirusAvailable == 20)
+                    Board.isBlueEradicated = true;
             }
             else
             {
@@ -41,6 +47,9 @@ public class Virus : MonoBehaviour, IPointerDownHandler
             {
                 Board.blackVirusAvailable += Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlackCounter;
                 Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().BlackCounter = 0;
+                // Check if eradicated
+                if (Board.blackVirusAvailable == 20)
+                    Board.isBlackEradicated = true;
             }
             else
             {
@@ -54,6 +63,9 @@ public class Virus : MonoBehaviour, IPointerDownHandler
             {
                 Board.yellowVirusAvailable += Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter;
                 Board.currentPlayer.GetComponent<DragSprite>().nextCity.GetComponent<City>().YellowCounter = 0;
+                // Check if eradicated
+                if (Board.yellowVirusAvailable == 20)
+                    Board.isYellowEradicated = true;
             }
             else
             {
@@ -83,18 +95,37 @@ public class Virus : MonoBehaviour, IPointerDownHandler
             // Checking to see if I should count this as a move
             bool played = true;
             if (name == "RedVirus" && !Board.isRedCured)
+            {
                 Board.isRedCured = true;
-            else if(name == "BlueVirus" && !Board.isBlueCured)
+                if (Board.redVirusAvailable == 20)
+                    Board.isRedEradicated = true;
+            }
+            else if (name == "BlueVirus" && !Board.isBlueCured)
+            {
                 Board.isBlueCured = true;
-            else if(name == "BlackVirus" && !Board.isBlackCured)
+                if (Board.blueVirusAvailable == 20)
+                    Board.isBlueEradicated = true;
+            }
+            else if (name == "BlackVirus" && !Board.isBlackCured)
+            {
                 Board.isBlackCured = true;
-            else if(name == "YellowVirus" && !Board.isYellowCured)
+                if (Board.blackVirusAvailable == 20)
+                    Board.isBlackEradicated = true;
+            }
+            else if (name == "YellowVirus" && !Board.isYellowCured)
+            {
                 Board.isYellowCured = true;
+                if (Board.yellowVirusAvailable == 20)
+                    Board.isYellowEradicated = true;
+            }
             else
+            {
                 played = false;
+            }
             
             if (played)
             {
+                transform.position = new Vector2(transform.position.x, transform.position.y + 0.75f);
                 // This counts as a player move
                 Board.currentPlayer.GetComponent<Piece>().numOfMoves++;
                 // if this is the 4th move then the next player will play
@@ -106,6 +137,12 @@ public class Virus : MonoBehaviour, IPointerDownHandler
             }
         }
         if (eventData.button != PointerEventData.InputButton.Middle) return;
+        
+        // if the color pressed is eradicated then we do nothing!
+        if (name == "RedVirus" && Board.isRedEradicated ||
+            name == "BlueVirus" && Board.isBlueEradicated ||
+            name == "BlackVirus" && Board.isBlackEradicated ||
+            name == "YellowVirus" && Board.isYellowEradicated) return;
 
         bool areAvailable = false;
         if (name == "RedVirus" && Board.redVirusAvailable > 0 ||
